@@ -176,6 +176,7 @@ p {
 
 .article-text {
   text-align: center;
+  aspect-ratio: 375 / 312;
 }
 
 .article-text h2 {
@@ -222,6 +223,12 @@ p {
 
 .article-link:hover::before {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 819px) {
+  .article-text {
+    padding-top: calc(var(--s-large) * 5);
+  }
 }
 
 @media screen and (min-width: 820px) {
