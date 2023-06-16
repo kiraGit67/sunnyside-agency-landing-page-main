@@ -266,6 +266,7 @@ p {
 
 .testimonials {
   padding-inline: var(--s-large);
+  padding-block: var(--s-xlarge);
 }
 
 .testimonial {
@@ -296,6 +297,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    padding-block: var(--s-xlarge);
   }
 
   .testimonials > h2 {
@@ -373,5 +375,11 @@ p {
   .two-columns.graphic-design-photography > .article-text {
     aspect-ratio: 375 / 350;
     background-position: top center;
+    padding-inline: calc(var(--s-xlarge) * 3.5);
+  }
+
+  .testimonials {
+    padding-inline: calc(var(--s-xlarge) * 2);
+    padding-block: calc(var(--s-xlarge) * 2);
   }
 }
