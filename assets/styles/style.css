@@ -179,6 +179,27 @@ p {
   aspect-ratio: 375 / 312;
 }
 
+.two-columns.graphic-design-photography > .article-text {
+  background-size: cover;
+  aspect-ratio: 375 / 624;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.two-columns.graphic-design-photography > .article-text > p {
+  color: var(--clr-black);
+}
+
+.article-text.graphic-design {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+
+.article-text.photography {
+  background-image: url("../images/mobile/image-photography.jpg");
+}
+
 .article-text h2 {
   color: var(--clr-black);
 }
@@ -257,5 +278,18 @@ p {
     background-size: cover;
     background-position: center center;
     aspect-ratio: 1 / 1.05;
+  }
+
+  .two-columns.graphic-design-photography > .article-text {
+    aspect-ratio: 375 / 350;
+    background-position: top center;
+  }
+
+  .article-text.graphic-design {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+
+  .article-text.photography {
+    background-image: url("../images/desktop/image-photography.jpg");
   }
 }
