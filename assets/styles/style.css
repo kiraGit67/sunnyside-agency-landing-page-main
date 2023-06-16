@@ -250,6 +250,19 @@ p {
   .article-text {
     padding-top: calc(var(--s-large) * 5);
   }
+
+  .two-columns.graphic-design-photography > .article-text {
+    background-position: top center;
+    aspect-ratio: 375 / 315;
+  }
+
+  .article-text.graphic-design {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+
+  .article-text.photography {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
 }
 
 @media screen and (min-width: 820px) {
@@ -279,9 +292,9 @@ p {
     background-position: center center;
     aspect-ratio: 1 / 1.05;
   }
-
+  /**/
   .two-columns.graphic-design-photography > .article-text {
-    aspect-ratio: 375 / 350;
+    aspect-ratio: 375 / 525;
     background-position: top center;
   }
 
@@ -291,5 +304,12 @@ p {
 
   .article-text.photography {
     background-image: url("../images/desktop/image-photography.jpg");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .two-columns.graphic-design-photography > .article-text {
+    aspect-ratio: 375 / 350;
+    background-position: top center;
   }
 }
