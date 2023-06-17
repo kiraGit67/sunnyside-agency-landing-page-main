@@ -352,6 +352,18 @@ p {
   color: var(--clr-dark-moderate-cyan);
 }
 
+.social-icons > img + img {
+  margin-left: var(--s-medium);
+}
+
+.footer-nav-list {
+  margin-top: var(--s-xlarge);
+}
+
+.social-icons {
+  margin-top: calc(var(--s-xlarge) * 2);
+}
+
 @media screen and (min-width: 768px) {
   .testimonials {
     display: grid;
