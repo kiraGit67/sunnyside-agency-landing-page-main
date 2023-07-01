@@ -21,7 +21,19 @@
     <div class="top">
       <img src="assets/images/logo.svg" alt="Sunnyside Logo" title="Sunnyside Logo">
       <nav class="page-nav">
-        <img src="assets/images/icon-hamburger.svg" alt="Navigation Toggle" title="Navigation Toggle">
+        <input type="checkbox" name="toggle-menu" id="toggle-menu">
+        <label for="toggle-menu">
+          <span class="sr-only">Toggle Menu</span>
+          <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
+            <path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd" />
+          </svg>
+        </label>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-list__link" id="about">About</a></li>
+          <li><a href="#" class="nav-list__link" id="services">Services</a></li>
+          <li><a href="#" class="nav-list__link" id="projects">Projects</a></li>
+          <li><a href="#" class="nav-list__link" id="contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
     <div class="content-box">
